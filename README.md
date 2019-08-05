@@ -30,7 +30,7 @@ own domain name ... free to adapt ...
 
 
 ## References
-* EPC Tag Data Standard, v. 1.11: https://www.gs1.org/standards/epcrfid-epcis-id-keys/epc-rfid-tds/1-11
+* EPC Tag Data Standard, v. 1.11: https://www.gs1.org/standards/epcrfid-epcis-id-keys/epc-rfid-tds/
 * EPCIS Standard, v. 1.2: https://www.gs1.org/standards/epcis
 * Core Business Vocabulary (CBV) Standard, v. 1.2.2: https://www.gs1.org/standards/epcis
 * GS1 Digital Link Standard, v. 1.1: 
