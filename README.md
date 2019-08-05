@@ -2,10 +2,13 @@
 Python script that translates EPC URIs and EPC Class URIs into their corresponding canonical GS1 Digital Link Web URI equivalents 
 
 ## Introduction  
-The **EPC Pure Identity URI** (or simply EPC URI) is a universal identifier for any physical or digital object such as products, assets, logistics units, or documents. It is the preferred way within information systems to denote specific objects. Applications based on **EPCIS**, GS1’s core standard for supply chain visibility, SHOULD use this syntax. It takes the form of a Uniform Resource Name (URN), which, taking the example of an SGTIN (= Serialised Global Trade Item Number) looks sth. like this: <i>urn:epc:<i>id</i>:sgtin:4012345.011111.987</i>. 
+The **EPC Pure Identity URI** (or simply EPC URI) is a universal identifier for any physical or digital object such as products, assets, logistics units, documents, or locations. It is the preferred way within information systems to denote arbitrary business objects. Applications based on **EPCIS**, GS1’s core standard for supply chain visibility, SHOULD use this syntax. It takes the form of a Uniform Resource Name (URN), which, taking the example of an SGTIN (= Serialised Global Trade Item Number) looks sth. like this: <i>urn:epc:<i>id</i>:sgtin:4012345.011111.987</i>. 
 
-A GS1 Digital Link Web URI is another GS1 URI, introduced especially to enable web requests through embedding GS1 keys and descriptive attributes into a web-friendly syntax. It SHOULD NOT be used in EPCIS for the purpose of identifying objects, locations, or parties. It takes the form of a Web URI, which, taking the above example, looks like this: <i>https://id.gs1.org/01/04012345111118/21/987</i>. 
+A **GS1 Digital Link Web URI** is another GS1 URI, introduced especially to enable web requests through embedding GS1 keys and descriptive attributes into a web-friendly syntax. It SHOULD NOT be used in EPCIS for the purpose of identifying objects, locations, or parties. It takes the form of a Web URI, which, taking the above example, looks like this: <i><i>https</i>://id.gs1.org/01/04012345111118/21/987</i> or <i><i>https</i>://example.com/01/04012345111118/21/987?15=211231</i>. 
 
+In case organisation wish to combine the powerful features of both supply chain visibility and accessibility to object-related information in the web (e.g. product description page or patient information leaflet), they need to translate EPC URIs into GS1 Digital Link Web URIs. 
+
+own domain name 
 
 
 
