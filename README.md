@@ -1,10 +1,12 @@
-# GS1-EPC-DigitalLink-URI-Translator
-Python script that translates EPC URIs and EPC Class URIs into their corresponding canonical GS1 Digital Link URI equivalents 
+# GS1 EPC URI - Digital Link Web URI Translator
+Python script that translates EPC URIs and EPC Class URIs into their corresponding canonical GS1 Digital Link Web URI equivalents 
 
 ## Introduction  
-The EPC Tag Data Standard defines the **EPC ‘Pure Identity’ URI** that SHOULD be used in **EPCIS**, GS1’s core standard for supply chain visibility. It takes the form of a Uniform Resource Name (URN), which, taking the example of an SGTIN (= Serialised Global Trade Item Number) looks sth. like this: <i>urn:epc:<i>id</i>:sgtin:4012345.011111.987</i>. The EPC is a universal identifier for any physical or digital object, e.g. products, assets, logistics units, parties or locations.
+The **EPC Pure Identity URI** (or simply EPC URI) is a universal identifier for any physical or digital object such as products, assets, logistics units, or documents. It is the preferred way within information systems to denote specific objects. Applications based on **EPCIS**, GS1’s core standard for supply chain visibility, SHOULD use this syntax. It takes the form of a Uniform Resource Name (URN), which, taking the example of an SGTIN (= Serialised Global Trade Item Number) looks sth. like this: <i>urn:epc:<i>id</i>:sgtin:4012345.011111.987</i>. 
 
-The GS1 Digital Link Standard is another GS1 URI syntax and especially enables web requests through embedding GS1 keys and further attributes into a web-friendly syntax. It SHOULD NOT be used in EPCIS for the purpose of identifying objects, locations, or parties. It takes the form of a Web URI, which, taking the above example, looks like this: ... 
+A GS1 Digital Link Web URI is another GS1 URI, introduced especially to enable web requests through embedding GS1 keys and descriptive attributes into a web-friendly syntax. It SHOULD NOT be used in EPCIS for the purpose of identifying objects, locations, or parties. It takes the form of a Web URI, which, taking the above example, looks like this: <i>https://id.gs1.org/01/04012345111118/21/987</i>. 
+
+
 
 
 ## Supported EPC/EPC Class URIs
