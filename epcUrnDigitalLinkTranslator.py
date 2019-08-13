@@ -2,7 +2,7 @@ from re import match
 from sys import exit
 from gtin import GTIN
 
-print ('Valid input examples: For an EPC URI, a valid input example is "urn:epc:id:sgtin:4012345.011111.987". For an EPC Class URI, a valid input example is "urn:epc:class:lgtin:4012345.012345.Lot987".')
+print ('For an EPC URI, a valid input example is "urn:epc:id:sgtin:4012345.011111.987".\nFor an EPC Class URI, a valid input example is "urn:epc:class:lgtin:4012345.012345.Lot987".')
 urn = input('Enter an EPC or EPC Class URI: ')
 
 # SGTIN EPC URI example: "urn:epc:id:sgtin:4012345.011111.98%22"
