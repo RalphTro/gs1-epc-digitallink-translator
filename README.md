@@ -1,5 +1,5 @@
 # GS1 EPC URI - Digital Link URI Translator
-Python script that translates EPC URIs and EPC Class URIs into their corresponding GS1 Element Strings and canonical GS1 Digital Link URI equivalents. 
+Translates EPC URIs and EPC Class URIs into their canonical GS1 Digital Link URI equivalents. 
 
 ## Introduction  
 The **EPC Pure Identity URI** (or simply EPC URI) is a universal identifier for any physical or digital object such as products, assets, logistics units, documents, or locations. It is the preferred way within information systems to denote arbitrary business objects. Applications based on **EPCIS**, GS1’s core standard for supply chain visibility, SHOULD use this syntax. It takes the form of a Uniform Resource Name (URN), which, taking the example of an SGTIN (= Serialised Global Trade Item Number) looks sth. like this: <i>urn:epc:<i>id</i>:sgtin:4012345.011111.987</i>. 
