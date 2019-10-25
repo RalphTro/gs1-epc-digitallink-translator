@@ -32,8 +32,8 @@ pip install epcdltranslator (see https://pypi.org/project/epcdltranslator/1.0.0/
 
 ## Usage/Short test script 
 Once installed, enter the following code into the Python shell:
-+ >>> import epcdltranslator as edt
-+ >>> edt.epcDLTranslator('<i>urn:epc:<i>id:</i>sgtin:4012345.011111.987</i>')
++ <i>>>></i> import epcdltranslator as edt
++ <i>>>></i> edt.epcDLTranslator('<i>urn:epc:<i>id:</i>sgtin:4012345.011111.987</i>')
 + It then should return:
 + 'https://id.gs1.org/01/04012345111118/21/987'
 
