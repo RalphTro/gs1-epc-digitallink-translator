@@ -31,9 +31,9 @@ Note that the remaining EPC schemes as defined in the EPC Tag Data Standard, nam
 pip install epcdltranslator (see https://pypi.org/project/epcdltranslator/1.0.0/)
 
 ## Usage/Short test script 
-Once installed, enter the following code into the Python shell:
-<i>>>></i> import epcdltranslator as edt
-<i>>>></i> edt.epcDLTranslator('<i>urn:epc:<i>id:</i>sgtin:4012345.011111.987</i>')
+Once installed, enter the following code into the Python shell: <br>
+<i>>>></i> import epcdltranslator as edt <br>
+<i>>>></i> edt.epcDLTranslator('<i>urn:epc:<i>id:</i>sgtin:4012345.011111.987</i>') <br>
 It then should return:
 'https://id.gs1.org/01/04012345111118/21/987'
 
