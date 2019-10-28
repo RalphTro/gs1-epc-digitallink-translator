@@ -35,7 +35,7 @@ Once installed, enter the following code into the Python shell: <br>
 <i>>>></i> import epcdltranslator as edt <br>
 <i>>>></i> edt.epcDLTranslator('<i>urn:epc:<i>id:</i>sgtin:4012345.011111.987</i>') <br>
 It then should return:
-<id>'<i>https:</i>//id.gs1.org/01/04012345111118/21/987'</id>
+'<id><i>https:</i>//id.gs1.org/01/04012345111118/21/987</id>'
 
 ## References
 * EPC Tag Data Standard, v. 1.12: https://www.gs1.org/standards/epcrfid-epcis-id-keys/epc-rfid-tds/
