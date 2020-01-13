@@ -7,6 +7,8 @@ A **GS1 Digital Link URI** is another GS1 URI, introduced especially to enable w
 
 In case organisation wish to combine the powerful features of both supply chain visibility and accessibility to object-related information in the web (e.g. product description page or patient information leaflet), they need to translate EPC URIs into GS1 Digital Link URIs. As GS1 Digital Link URIs can also be constructed with company-specific domain names, this script can easily be adapted to also support custom domain names (e.g "example.com"). 
 
+<img src="gs1-epc-digitallink-translator.jpg">
+
 ## Supported EPC/EPC Class URIs
 + SGTIN:  Serialised Global Trade Item Number
 + SSCC:   Serial Shipping Container Code
