@@ -1,15 +1,12 @@
 from re import match
 from gtin import GTIN
 
-# Version 1.1.0
+# Version 1.0.0
 # Last update: 2020-06-01
 
 # Function 'epcDLTranslator' expects an EPC/EPC Class URI and returns the corresponding GS1 Digital Link URI.
 # For an EPC URI, a valid input example is "urn:epc:id:sgtin:4012345.011111.987".
 # For an EPC Class URI, a valid input example is "urn:epc:class:lgtin:4012345.012345.Lot987".
-
-# Function 'dlEPCTranslator' expects a canonical GS1 Digital Link URI.
-# A valid input example is "https://id.gs1.org/01/04012345123456/21/Ser123"
 
 def epcDLTranslator(urn):
     if match(r'^urn:epc:id:sgtin:((\d{6}\.\d{7})|(\d{7}\.\d{6})|(\d{8}\.\d{5})|(\d{9}\.\d{4})|(\d{10}\.\d{3})|(\d{11}\.\d{2})|(\d{12}\.\d{1}))\.(\%2[125-9A-Fa-f]|\%3[0-9A-Fa-f]|\%4[1-9A-Fa-f]|\%5[0-9AaFf]|\%6[1-9A-Fa-f]|\%7[0-9Aa]|[!\')(*+,.0-9:;=A-Za-z_-]){1,20}$', urn) is not None:
@@ -123,16 +120,3 @@ def epcDLTranslator(urn):
         return ('https://id.gs1.org/01/'+ str(GTIN(raw=rawGTIN)) + '/10/' + lot)
     else:
         return ('This does not seem to be a valid EPC URI/EPC Class URI.')
-
-gcpLength = 7
-
-# Ex 1: 040123451111111110
-# Ex 2: 340123451111111111
-
-def dlEPCTranslator(dl):
-    if match(r'https://id.gs1.org/00/(\d{18})$', dl) is not None:
-        gs1companyprefix = dl[23:(23+gcpLength)]
-        serialref = dl[(23+gcpLength):-1] # -1
-        return ('urn:epc:id:sscc:' + gs1companyprefix + '.' + dl[22] + serialref)
-    else:
-        return ('This does not seem to be a valid GS1 Digital Link URI.')
