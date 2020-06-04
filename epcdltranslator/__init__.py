@@ -11,8 +11,6 @@ from gtin import GTIN
 # Function 'dlEPCTranslator' expects a canonical GS1 Digital Link URI.
 # A valid input example is "https://id.gs1.org/01/04012345123456/21/Ser123"
 
-gcp = 7
-
 def epcDLTranslator(urn):
     if match(r'^urn:epc:id:sgtin:((\d{6}\.\d{7})|(\d{7}\.\d{6})|(\d{8}\.\d{5})|(\d{9}\.\d{4})|(\d{10}\.\d{3})|(\d{11}\.\d{2})|(\d{12}\.\d{1}))\.(\%2[125-9A-Fa-f]|\%3[0-9A-Fa-f]|\%4[1-9A-Fa-f]|\%5[0-9AaFf]|\%6[1-9A-Fa-f]|\%7[0-9Aa]|[!\')(*+,.0-9:;=A-Za-z_-]){1,20}$', urn) is not None:
         partition = urn.index('.')
@@ -126,7 +124,6 @@ def epcDLTranslator(urn):
     else:
         return ('This does not seem to be a valid EPC URI/EPC Class URI.')
 
-# !!! ERSETZEN  
 gcpLength = 7
 
 # Ex 1: 040123451111111110
